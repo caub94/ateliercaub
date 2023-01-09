@@ -1,0 +1,225 @@
+body{
+    margin: 0;
+    background-color: black;
+    color: #dddddd;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Oswald', sans-serif;
+}
+a{
+    color: #dddddd;
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: .2rem;
+    font-size: 1rem;
+}
+
+.wrapper{
+    margin: 20px 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 40px;
+    grid-gap: 2rem;
+    grid-template-areas: 
+    "nav nav nav"
+    "main main main"
+    "content1 content2 content3"
+    "content4 content5 content6"
+    "quote quote quote"
+    "footer footer footer";
+}
+
+nav{
+    grid-area: nav;
+    padding: 30px 0;
+}
+.icon{
+    filter: invert(100%);
+}
+.iconImg{
+    height: 40px;
+}
+.logo{
+    float: left;
+}
+
+.icon.grid{
+    height: 30px;
+    float: right;
+    opacity: 10%;
+}
+
+main{
+    grid-area: main;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    text-align: justify;
+    font-size: 1rem;
+}
+h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 15rem;
+    text-align: center;
+    margin: 50px auto 0 auto;
+}
+h2{
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: .08rem;
+    margin-top: 0;
+    text-align: center;
+}
+p{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+    margin: 5% auto 5% auto;
+    line-height: 3rem;
+    text-align: center;
+}
+    
+
+.projectIcon{
+    width: 80%;
+    margin: 10%;
+    margin-bottom: 2%;
+}
+.projectIcon:hover{
+    filter: invert(100%);
+}
+
+.description{
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 0.1rem;
+    margin-top: 2%;
+}
+
+#content1{
+    grid-area: content1;
+}
+#content2{
+    grid-area: content2;
+}
+#content3{
+    grid-area: content3;
+}
+#sidebar{
+    grid-area: sidebar;
+}
+#quote{
+    grid-area: quote;
+    font-size: 3rem;
+    
+}
+
+#quote>#author{
+    font-size: 1rem;
+}
+
+footer{
+    grid-area: footer;
+    text-align: center;
+    font-size: .7rem;
+    margin-top: 5%;
+    letter-spacing: .3rem;
+    margin: 0;
+}
+
+#myBtn {
+   /*  display: none; */
+    width: 100%;
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color:black; 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 2rem; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #111111; /* Add a dark-grey background on hover */
+  }
+
+  #arrowsup{
+      width: 30px;
+  }
+
+/* size iPad (normal not pro) */
+@media only screen and (max-width: 1024px){
+    .wrapper{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "nav nav"
+        "main main"
+        "content1 content2"
+        "content3 content4"
+        "content5 content6"
+        "quote quote"
+        "footer footer";
+    }
+    p{
+        margin: 15% auto 15% auto;
+      
+    }
+    #quote{
+        margin: 5% auto;
+    }
+    footer>div>p{
+        margin: 5% auto;
+    }
+    main{
+        padding: 0;
+        font-size: 1rem;
+    }
+    .iconImg{
+        height: 40px;
+    }
+}
+
+/* size phone*/
+@media only screen and (max-width: 600px){
+    .wrapper{
+        grid-template-columns: 1fr;
+        grid-template-rows: 20px;
+        grid-template-areas: 
+        "nav"
+        "main"
+        "content1" 
+        "content2"
+        "content3"
+        "content4"
+        "content5"
+        "content6"
+        "quote"
+        "footer";
+    }
+  
+    main{
+        grid-area: main;
+        padding: 10%;
+        padding-bottom: 15%;
+        text-align: justify;
+       
+    }
+    h1{
+        font-size: 6rem;
+    }
+    
+    
+    .smallText{
+        display: block;
+    }
+    .projectIcon{
+        width: 80%;
+        margin: 0 10%;
+    }
+}
+
+@media only screen and (min-width: 1400px){
+    .wrapper{
+       width: 1300px;
+       margin: auto;
+    }
+}

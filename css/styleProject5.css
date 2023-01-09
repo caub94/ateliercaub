@@ -1,0 +1,309 @@
+body{
+    margin: 0;
+    background-color: black;
+    color: #dddddd;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper{
+    margin: 20px 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "spaceTop spaceTop spaceTop spaceTop"
+    "content1 content1 content1 sidebar"
+    "content2 content2 content3 content3"
+    "content4 content4 content5 content5"
+    "content6 content6 content7 content7"
+    "content8 content8 content9 content9"
+    "content10 content10 content10 content10"
+    "content11 content11 content11 content11"
+    "content12 content12 content12 content12"
+    "content13 content13 content13 content13"
+    ". content14 content14 ."
+    "footer footer footer footer"
+}
+footer{
+    text-align: center;
+    font-size: .7rem;
+    margin-top: 5%;
+    letter-spacing: .3rem;
+}
+
+.small{
+    display: none;
+}
+.verysmall{
+    display: none;
+}
+
+p{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+    font-size: 1.2rem;
+    letter-spacing: .05rem;
+    line-height: 2rem;
+}
+ 
+nav{
+    grid-area: nav;
+    padding: 30px 0;
+}
+.iconImg{
+    height: 40px;
+    float: left;
+    filter: invert(100%);
+}
+.icon.hamburger{
+    float: right;
+}
+
+.icon.grid{
+    height: 30px;
+    float: right;
+}
+
+.emptyDiv#spaceTop{
+    grid-area: spaceTop;
+    height: 80px ;
+}
+
+.content{
+    padding: 20px 0;
+    opacity: 90%;
+}
+
+h2{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    letter-spacing: .2rem;
+    margin-top: 0;
+}
+span.bigLetter{
+    font-size: 4rem;
+}
+
+h4{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.7rem;
+}
+
+strong{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1rem;
+}
+
+.projectImage{
+    width: 100%;
+}
+
+.illustration.projectImage{
+    height: 100%;
+    width: auto;
+}
+
+#content1{
+    grid-area: content1;
+}
+#content1b{
+    grid-area: content1b;
+}
+#content2{
+    grid-area: content2;
+}
+#content3{
+    grid-area: content3;
+}
+#content4{
+    grid-area: content4;
+}
+#content5{
+    grid-area: content5;
+}
+#content6{
+    grid-area: content6;
+}
+#content7{
+    grid-area: content7;
+}
+#content8{
+    grid-area: content8;
+    padding: 20%;
+}
+/* #content8b{
+    grid-area: content8;
+    display: none;
+    grid-area: content8b;
+} */
+#content9{
+    grid-area: content9;
+    padding: 20%;
+}
+#content10{
+    grid-area: content10;
+    padding: 10% 0 5px 0;
+}
+#content10b{
+    grid-area: content10b;
+    padding: 10% 0 5px 0;
+}
+#content10c{
+    grid-area: content10c;
+    padding: 10% 0 5px 0;
+}
+#content11{
+    grid-area: content11;
+    padding: 5px 0 10% 0;
+}
+#content11b{
+    grid-area: content11b;
+    padding: 10% 0 5px 0;
+}
+#content11c{
+    grid-area: content11c;
+    padding: 10% 0 5px 0;
+}
+
+#content12{
+    grid-area: content12;
+    padding: 10% 0 5px 0;
+}
+#content13{
+    grid-area: content13;
+    padding: 5px 0 10% 0;
+}
+#content14{
+    grid-area: content14;
+    padding: 0;
+}
+
+#contentempty{
+    grid-area: contentempty;
+    padding: 10% 0;
+}
+#content15{
+    grid-area: content15;
+    padding:0;
+}
+
+
+#sidebar{
+    grid-area: sidebar;
+    padding: 0;
+}
+#sidebar.fixed{
+    position: relative;
+    display: inline-block;
+}
+
+footer{
+    grid-area: footer;
+    text-align: center;
+    font-size: .7rem;
+    margin-top: 5%;
+    letter-spacing: .3rem;
+}
+.LogoFooter{
+    width: 300px;
+    filter: invert(100%);
+}
+#myBtn {
+    /*  display: none; */
+     width: 100%;
+     z-index: 99; 
+     border: none; 
+     outline: none; 
+     background-color:black; 
+     color: white; 
+     cursor: pointer; 
+     padding: 15px; /* Some padding */
+     border-radius: 10px; /* Rounded corners */
+     font-size: 2rem; /* Increase font size */
+   }
+   
+   #myBtn:hover {
+     background-color: #111111; /* Add a dark-grey background on hover */
+   }
+ 
+   #arrowsup{
+       width: 30px;
+   }
+ 
+a{
+    color: #dddddd;
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: .2rem;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 1300px){
+    .wrapper{
+        grid-template-areas: 
+        "nav nav nav nav"
+        "spaceTop spaceTop spaceTop spaceTop"
+        "content1b content1b sidebar sidebar"
+        "content2 content2 content3 content3"
+        "content4 content4 content5 content5"
+        "content6 content6 content7 content7"
+        "content8 content8 content9 content9"
+        "content10 content10 content10 content10"
+        "content11 content11 content11 content11"
+        "content12 content12 content12 content12"
+        "content13 content13 content13 content13"
+        "content14 content14 content14 content14"
+        "footer footer footer footer"
+    }
+    .small{
+        display: block;
+    }
+    .big{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 900px){
+    .wrapper{
+        grid-template-areas: 
+        "nav nav nav nav"
+        ". content1b content1b ."
+        "sidebar sidebar sidebar sidebar"
+        "content2 content2 content3 content3"
+        "content4 content4 content5 content5"
+        "content6 content6 content7 content7"
+        "content8 content8 content9 content9"
+        "content10b content10b content10b content10b"
+        "content10c content10c content10c content10c"
+        "content11b content11b content11b content11b"
+        "content11c content11c content11c content11c"
+        "content12 content12 content12 content12"
+        "content13 content13 content13 content13"
+        "content14 content14 content14 content14"
+        "footer footer footer footer"
+    }
+    .verysmall{
+        display: block;
+    }
+    .verybig{
+        display: none;
+    }
+    body{
+        text-align: center;
+    }
+    #spaceTop{
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 1400px){
+    .wrapper{
+       width: 1300px;
+       margin: auto;
+    }
+}
